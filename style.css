@@ -1,0 +1,14 @@
+/* nav bar styling */
+.navbar { 
+    background-color: #364f6c;
+    color: white;
+}
+
+/* nav bar styling end */
+
+/* sections here */
+.Section-aboutUs{
+    width: 100%;
+    min-height: 100vh;
+}
+/* sections end here */
