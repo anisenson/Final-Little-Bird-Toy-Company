@@ -7,8 +7,42 @@
 /* nav bar styling end */
 
 /* sections here */
-.Section-aboutUs{
+.section-aboutUs{
     width: 100%;
     min-height: 100vh;
+    background-color: grey;
 }
 /* sections end here */
+
+/* logo styling */
+.smallLogo {
+    width: 200px;
+}
+/* logo styling end */
+
+/* button styling */
+.buttonstyle{
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid blue;
+  color: blue;
+
+}
+
+.buttonstyle:hover{
+    
+
+}
+/* button styling end */
