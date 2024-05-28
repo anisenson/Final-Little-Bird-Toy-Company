@@ -1,7 +1,7 @@
 /* nav bar styling */
 .navbar { 
-    background-color: #FFFFFF;
-    color: #503B3B;
+    background-color: #DBDBDB ;
+    color: #FFFFFF ;
 }
 
 /* nav bar styling end */
@@ -9,13 +9,20 @@
 
 .landingHeader {
     background-color: #DBDBDB;
+    color: #503B3B; 
 }
 
 .landingRow {
-    background-color: #503B3B;
+    background-color: white;
 }
 
 /* sections here */
+.section-landing{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FC944C;
+}
+
 .section-aboutUs{
     width: 100%;
     min-height: 100vh;
@@ -30,43 +37,43 @@
 /* logo styling end */
 
 /* button styling */
-.buttonstyle{
-  min-width: 130px;
-  height: 40px;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  z-index: 0;
-  background: #fff;
-  overflow: hidden;
-  border: 2px solid #FC944C;
-  color: #503B3B;
-
-}
-
-.buttonstyle:hover{
-    color: #fff;
-}
-
-.buttonstyle:hover::after{
+.buttonstyle {
+    min-width: 130px;
+    height: 40px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #FC944C; /* Primary accent color */
+    border: 2px solid #503B3B; /* Same as background for a cohesive look */
+    color: #FFFFFF; /* White text for contrast */
+    overflow: hidden;
+  }
+  
+  .buttonstyle:hover {
+    color: #503B3B; /* Keep text white on hover */
+    background: #503B3B; /* Darken the background on hover */
+    border-color: #503B3B; /* Match border to hover background */
+  }
+  
+  .buttonstyle:hover::after {
     height: 100%;
-}
-
-.buttonstyle::after{
-  content: "";
-  position: absolute;
-  z-index: -1;
-  transition: all 0.3s ease;
-  left: 0;
-  top: 0;
-  height: 0;
-  width: 100%;
-  background: #503B3B;
-}
-/* button styling end */
+  }
+  
+  .buttonstyle::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: #DBDBDB; /* Light gray for contrast */
+  }
+  
