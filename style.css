@@ -28,6 +28,16 @@
     min-height: 100vh;
     background-color: #FC944C;
 }
+
+.container-aboutUS{
+    background-color: white;
+}
+
+.section-card {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
 /* sections end here */
 
 /* logo styling */
@@ -75,5 +85,13 @@
     height: 0;
     width: 100%;
     background: #DBDBDB; /* Light gray for contrast */
+  }
+
+  /* circle images */ 
+  .circle_Image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
   }
   
