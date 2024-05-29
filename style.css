@@ -1,6 +1,24 @@
+@font-face {
+    font-family: 'SugarAndSpice';
+    src: url('fonts/Sugar\ &\ Spice\ demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alesand';
+    src: url('fonts/Alesand\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 /* nav bar styling */
 .navbar {
     background-color: white;
+    font-family: 'Alesand', sans-serif;
+    font-size: larger;
 }
 
 .nav-item {
@@ -64,6 +82,12 @@
     min-height: 100vh;
     background-color: white;
 }
+
+.section-card2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FC944C;
+}
 /* sections end here */
 
 /* logo styling */
@@ -72,7 +96,7 @@
 }
 
 .navbar-logo{
-    width: 350px;
+    width: 200px;
 
 }
 /* logo styling end */
@@ -94,7 +118,7 @@
     border: 2px solid #503B3B; /* Same as background for a cohesive look */
     color: #FFFFFF; /* White text for contrast */
     overflow: hidden;
-  }
+}
   
   .buttonstyle:hover {
     color: #503B3B; /* Keep text white on hover */
@@ -126,6 +150,50 @@
     overflow: hidden;
   }
 
+
+
+.logo {
+    width: 150px;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #503B3B;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .fa-lg {
+    font-size: 1.75em; 
+    margin-right: 10px;
+}
   
 
-  
+.footerCredit {
+    background-color: #503B3B;
+    color: white;
+    font-family: 'Alesand', sans-serif;
+
+}
+
+.instagram-icon {
+    color: #C13584; /* Instagram color */
+}
+
+.twitter-icon {
+    color: #1DA1F2; /* Twitter color */
+}
+
+.snapchat-icon {
+    color: #FFFC00; /* Snapchat color */
+}
+
+.facebook-icon {
+    color: #3b5998; /* Facebook color */
+}
