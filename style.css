@@ -150,7 +150,7 @@
     overflow: hidden;
   }
 
-
+/* footer styling */
 
 .logo {
     width: 150px;
@@ -183,17 +183,19 @@
 }
 
 .instagram-icon {
-    color: #C13584; /* Instagram color */
+    color: #C13584; 
 }
 
 .twitter-icon {
-    color: #1DA1F2; /* Twitter color */
+    color: #1DA1F2; 
 }
 
 .snapchat-icon {
-    color: #FFFC00; /* Snapchat color */
+   color: #FFFC00; 
 }
 
 .facebook-icon {
-    color: #3b5998; /* Facebook color */
+    color: #3b5998; 
 }
+
+/* footer styling */
