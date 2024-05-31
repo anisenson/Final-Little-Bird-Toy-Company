@@ -26,6 +26,7 @@
         />
 
         <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
         <!--Custom CSS-->
         <link rel="stylesheet" href="style.css">
@@ -38,7 +39,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="logos/Alternate Logo 2.png" class="navbar-logo"></a>
+                    <a class="navbar-brand" href="index.html"><img src="logos/Alternate Logo 2.png" class="navbar-logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                         aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -66,54 +67,43 @@
         <main>
             
             <div class="section-landing">
-                <div class="container-fluid py-5">
-
-
-                    <div class="row justify-content-center landingRow">
-                        
-                        <div class="col-lg-5 col-sm-12 text-center p-3">
-                            <img class="img-fluid h-100  border border-dark rounded" src="logos/Little Bird Toys Logo (1).png">
+                <div class="container-fluid container-landing py-5">
+                    <div class="row justify-content-center align-items-center landingRow">
+                        <div class="col-lg-5 col-sm-12 text-center p-3 d-flex align-items-center justify-content-center">
+                            <img class="img-fluid landingImg" src="logos/Little Bird Toys Logo (1).png" alt="Little Bird Toys Logo">
                         </div>
-
                         
-                        <div class="col-lg-5 col-sm-12 p-3">
-                            <div class=" landingHeader p-3  border border-dark rounded ">
+                        <div class="col-lg-5 col-sm-12 p-3 d-flex align-items-center">
+                            <div class="landingHeader p-4 border border-dark rounded w-100">
                                 <h4>Welcome to Little Bird Toys!</h4>
                                 <p>
-                                    The joy of timeless play with Little Bird Toys, where each toy is handcrafted from sustainable materials to spark creativity and foster connections between generations. Established in 2018, we are dedicated to quality and sustainability, ensuring every toy is meticulously crafted and rigorously tested in our Toms River, NJ workshop.
-
-                                    Visit our charming store to explore our heirloom-quality collection, meet our team, and enjoy our inviting play space. Whether you're searching for the perfect gift or a new addition to your family's toy collection, we are here to help.
+                                    The joy of timeless play with Little Bird Toys, where each toy is handcrafted from sustainable materials to spark creativity and foster connections between generations.
                                 </p>
-                                <h5>Store Hours</h5>
-                                <ul>
-                                    <li><b>Weekdays: </b> 7:00 AM to 6:00 PM</li>
-                                    <li><b>Saturday: </b> 8:00 AM to 6:00 PM</li>
-                                    <li><b>Sunday: </b> CLOSED</li>
-                                </ul>
+                                <button class="buttonstyle" onclick="location.href='#section-aboutUs'">Learn More!</button>
                             </div>
-                        </div>   
-                    </div>       
-
-                    <div class="row justify-content-center landingRow">
-                        
-                        <div class="col-lg-5 col-sm-12 p-3">
-                            <img src="images/wooden-toy-car.jpg" class="img-fluid h-100  border border-dark rounded">
                         </div>
-
                         
-                        <div class="col-lg-5 col-sm-12 p-3">
-                            <div class="col-12 text-center mt-3">
-                                <button class="buttonstyle" href="#section-aboutUs">Learn More!</button>
-                            </div>
-                            <div class="col-12 text-center">
-                                <img class="smallLogo" src="logos/Alternate Logo 1.png">
-                            </div>
-                        </div>   
-                    </div>       
-            
-                    
+                    </div>
                 </div>
             </div>
+            
+                        
+                        
+                        
+                        <!--
+                            <h5>Store Hours</h5>
+                                <ul>
+                                    <li><b>Weekdays:</b> 7:00 AM to 6:00 PM</li>
+                                    <li><b>Saturday:</b> 8:00 AM to 6:00 PM</li>
+                                    <li><b>Sunday:</b> CLOSED</li>
+                                </ul>
+                            
+                            -->
+                        
+                        
+                        
+                       
+
 
 
             <div class="section-aboutUs" id="section-aboutUs">
@@ -222,11 +212,11 @@
                     </div>
                     <div class="col-md-5 mb-4">
                         <h3>Little Bird Toys Co.</h3>
-                        <ol class="list-unstyled">
-                            <li><a href="#" class="text-dark">about us</a></li>
-                            <li><a href="#" class="text-dark">products</a></li>
-                            <li><a href="#" class="text-dark">contact</a></li>
-                        </ol>
+                        <ul>
+                            <li><a href="#section-aboutUs" class="text-dark">About us</a></li>
+                            <li><a href="products.html" class="text-dark">Products</a></li>
+                            <li><a href="contact.html" class="text-dark">Contact</a></li>
+                        </ul>
                     </div>
                     <div class="col-md-5 mb-4">
                         <h3>Follow Us!</h3>
