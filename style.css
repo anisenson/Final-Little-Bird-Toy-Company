@@ -107,7 +107,11 @@ body {
 .slideshow-container {
     position: relative;
     background: #f1f1f1;
-  }
+}
+
+.slideshow-container q {
+    font-size: large;
+}
   
   /* Slides */
   .mySlides {
@@ -129,6 +133,7 @@ body {
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    text-decoration: none;
   }
   
   .next {
@@ -165,7 +170,7 @@ body {
   }
   
   q {font-style: italic;}
-  .author {color: cornflowerblue;}
+  .author {color: #FC944C;}
   
 /* Other sections */
 .section-card {
