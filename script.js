@@ -47,7 +47,7 @@ const Products = [
         cardimg: 'images/boat1.jpg',
         img1: 'images/boat2.jpg',
         img2: 'images/boat3.jpg',
-        img3: 'images/boat4.jpg',
+        img3: 'images/boat4.jpg', 
         img4: 'images/boat5.jpg',
         modalID: 'modal5'
     },

@@ -290,7 +290,7 @@ body {
     border-radius: 5px;
     transition: transform 0.2s;
 }
-
+ 
 .carditem:hover {
     transform: scale(1.005);
     box-shadow: 2px 2px 2px 2px #503B3B;
