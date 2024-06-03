@@ -99,9 +99,7 @@ body {
     background-color: #FC944C;
 }
 
-.container-aboutUS {
-    background-color: white;
-}
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -184,6 +182,13 @@ body {
     min-height: 100vh;
     background-color: #FC944C;
 }
+/* Circle images */
+.circle_Image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 /* Button styling */
 .buttonstyle {
@@ -226,13 +231,6 @@ body {
     background: #DBDBDB;
 }
 
-/* Circle images */
-.circle_Image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-}
 
 /* footer styling */
 
@@ -367,6 +365,16 @@ body {
     font-family: 'Lato' sans-serif;
     font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
