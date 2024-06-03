@@ -78,7 +78,7 @@ body {
 }
 
 .landingImg {
-    width: 500px;
+    width: auto;
 }
 
 .section-landing h4 {
@@ -349,3 +349,21 @@ body {
 .navbar-logo {
     width: 200px;
 }
+
+
+/* Contact Page */
+
+.section-contact {
+    background-color: #FC944C;
+}
+
+.section-contact h2 {
+    font-family: 'SugarAndSpice';
+    font-size: 50px;
+}
+
+.section-contact p {
+    font-family: 'Lato' sans-serif;
+    font-size: 20px;
+}
+
