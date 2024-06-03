@@ -287,19 +287,16 @@ body {
 /* Card styling */
 .carditem {
     border: 2px solid black;
-    border-radius: 20px;
+    border-radius: 5px;
     transition: transform 0.2s;
 }
 
 .carditem:hover {
-    transform: scale(1.05);
-    box-shadow: 10px 10px 10px black;
+    transform: scale(1.005);
+    box-shadow: 2px 2px 2px 2px #503B3B;
     transition: 0.5s;
 }
 
-.cardimgborder {
-    border: solid 4px black;
-}
 
 /* Additional button styling */
 .btnstyle {

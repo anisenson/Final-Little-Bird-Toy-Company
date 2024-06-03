@@ -57,9 +57,9 @@ const Products = [
         description: 'Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate',
         age: '3+',
         measures: '(13” L x 12” W x 2” H).',
-        cardimg: 'images/block1.jpg',
-        img1: 'images/block2.jpg',
-        img2: 'images/block3.jpg',
+        cardimg: 'images/Block1.png',
+        img1: 'images/block1.jpg',
+        img2: 'images/block2.jpg',
         img3: 'images/block4.jpg',
         img4: 'images/block5.jpg',
         modalID: 'modal6'
@@ -79,7 +79,7 @@ function generateProductCards() {
                 <div class="card-body text-center">
                     <h5 class="card-title">${product.product}</h5>
                     <p class="card-text">${product.price}</p>
-                    <a href="#" data-toggle="modal" data-target="#${product.modalID}">Click Here</a>
+                    <a href="#" data-toggle="modal" data-target="#${product.modalID}">Learn More</a>
                 </div>
             </div>
             <!-- Modal -->
@@ -97,9 +97,10 @@ function generateProductCards() {
                                     <img class="smallpic" id="smallpic${index}-3" src="${product.img4}">
                                 </div>    
                                 <div class="col-12">
-                                    <h4>Description:<br>${product.description}</h4>
+                                    <h4><br>${product.description}</h4>
                                     <h5>Age: ${product.age}</h5>
                                     <h6>Measures: ${product.measures}</h6>
+                                    <h6>Price: ${product.price}</h6>
                                 </div>
                             </div>
                         </div>
