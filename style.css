@@ -286,7 +286,6 @@ body {
 
 /* Card styling */
 .carditem {
-    width: 25rem;
     border: 2px solid black;
     border-radius: 20px;
     transition: transform 0.2s;
