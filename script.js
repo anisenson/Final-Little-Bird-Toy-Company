@@ -36,10 +36,6 @@ function showSlides(n) {
 
 // learn more button //
 
-function learnMore(description) {
- 
-}
-
 
 
 
