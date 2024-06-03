@@ -375,7 +375,14 @@ body {
 
 
 
+.smallpic {
+    width: 100px;
+    height: auto;
+}
 
 
-
+#mainPic {
+    width: 300px;
+    height: 200px;
+}
 
