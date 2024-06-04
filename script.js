@@ -88,10 +88,11 @@ function generateProductCards() {
                     <div class="modal-content">
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-10">
+                                <div class="col-sm-12 col-md-10 ">
                                     <img id="mainPic${index}" class="mainPic" src="${product.img1}">
                                 </div>
-                                <div class="col-2">
+                                <div class="col-sm-12 col-md-2 ">
+                                    <img class="smallpic activeBorder" id="smallpic${index}-1" src="${product.img1}">
                                     <img class="smallpic" id="smallpic${index}-1" src="${product.img2}">
                                     <img class="smallpic" id="smallpic${index}-2" src="${product.img3}">
                                     <img class="smallpic" id="smallpic${index}-3" src="${product.img4}">
