@@ -6,7 +6,7 @@ const Products = [
         age: 'All Ages',
         measures: 'N/A',
         cardimg: 'images/car1.jpg',
-        img1: 'images/car1.jpg',
+        img1: 'images/car1a.jpg',
         img2: 'images/car2.jpg',
         img3: 'images/car3.jpg',
         img4: 'images/car4.jpg',
@@ -58,11 +58,24 @@ const Products = [
         age: '3+',
         measures: '(13” L x 12” W x 2” H).',
         cardimg: 'images/Block1.png',
-        img1: 'images/block1.jpg',
+        img1: 'images/Block1.png',
         img2: 'images/block2.jpg',
         img3: 'images/block4.jpg',
         img4: 'images/block5.jpg',
         modalID: 'modal6'
+    },
+    {
+        product: 'Wooden Sailboat',
+        price: '$14.99',
+        description: 'Sturdy enough to withstand years of hard play and then be passed on to the kids of the next generation. Each wooden toy is carefully handmade with all edges and corners rounded, and then hand sanded to a pleasant feeling satin smooth natural finish that the toddler can safely chew on.',
+        age: '3+',
+        measures: '(13” L x 12” W x 2” H).',
+        cardimg: 'images/sailboat4.webp',
+        img1: 'images/sailboat4.webp',
+        img2: 'images/sailboat1.webp',
+        img3: 'images/sailboat2.webp',
+        img4: 'images/sailboat3.webp',
+        modalID: 'modal7'
     },
 ];
 
@@ -88,10 +101,10 @@ function generateProductCards() {
                     <div class="modal-content">
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-sm-12 col-md-10 ">
+                                <div class="col-md-12 col-lg-10 text-center ">
                                     <img id="mainPic${index}" class="mainPic" src="${product.img1}">
                                 </div>
-                                <div class="col-sm-12 col-md-2 ">
+                                <div class="col-md-12 col-lg-2 text-center ">
                                     <img class="smallpic activeBorder" id="smallpic${index}-1" src="${product.img1}">
                                     <img class="smallpic" id="smallpic${index}-1" src="${product.img2}">
                                     <img class="smallpic" id="smallpic${index}-2" src="${product.img3}">
@@ -133,3 +146,9 @@ function generateProductCards() {
 }
 
 window.onload = generateProductCards;
+
+
+
+function refresh(){
+    location.reload()
+}
