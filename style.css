@@ -369,13 +369,17 @@ body {
     margin: 2px;
 }
 .activeBorder {
-    border: 1px solid black;
+    border: 1px solid #503B3B;
 }
 
-.smallpic:hover, .activeBorder:hover {
+.smallpic:hover {
     transform: scale(1.03);
     box-shadow: 2px 2px 2px 2px #503B3B;
     transition: 0.2s;
+    border: none;
+}
+
+.no-border {
     border: none;
 }
 

@@ -101,15 +101,17 @@ function generateProductCards() {
                     <div class="modal-content">
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-md-12 col-lg-10 text-center ">
+                                <div class="col-md-12 col-lg-10 text-center">
                                     <img id="mainPic${index}" class="mainPic" src="${product.img1}">
                                 </div>
-                                <div class="col-md-12 col-lg-2 text-center ">
+                                <div class="col-md-12 col-lg-2 text-center">
                                     <img class="smallpic activeBorder" id="smallpic${index}-1" src="${product.img1}">
-                                    <img class="smallpic" id="smallpic${index}-1" src="${product.img2}">
-                                    <img class="smallpic" id="smallpic${index}-2" src="${product.img3}">
-                                    <img class="smallpic" id="smallpic${index}-3" src="${product.img4}">
-                                </div>    
+                                    <img class="smallpic" id="smallpic${index}-2" src="${product.img2}">
+                                    <img class="smallpic" id="smallpic${index}-3" src="${product.img3}">
+                                    <img class="smallpic" id="smallpic${index}-4" src="${product.img4}">
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-12">
                                     <h4><br>${product.description}</h4>
                                     <h5>Age: ${product.age}</h5>
@@ -132,14 +134,17 @@ function generateProductCards() {
     Products.forEach((product, index) => {
         const mainImage = document.getElementById(`mainPic${index}`);
         const smallImages = document.querySelectorAll(`#${product.modalID} .smallpic`); //takes all id's with "smallpic*" and asigns it to smallImage
+        const activeBorder = document.querySelector(`#${product.modalID} .activeBorder`);
 
         smallImages.forEach(smallImage => {
             smallImage.addEventListener('mouseenter', function () { //iterates through all smallimages to make the changes on hover.
                 mainImage.src = smallImage.src;
+                activeBorder.classList.add('no-border');
             });
 
             smallImage.addEventListener('mouseleave', function () {
                 mainImage.src = product.img1;
+                activeBorder.classList.remove('no-border');
             });
         });
     });
@@ -147,8 +152,6 @@ function generateProductCards() {
 
 window.onload = generateProductCards;
 
-
-
-function refresh(){
-    location.reload()
+function refresh() {
+    location.reload();
 }
