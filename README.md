@@ -1,1 +1,1 @@
-Final Project WDPP Junior Year, Worked with @DanielB566
+Final Project WDPP Junior Year, Worked with <a href="https://github.com/DanielB566">Dan Bootnik</a>
