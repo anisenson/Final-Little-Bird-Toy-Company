@@ -412,18 +412,22 @@ body {
   }
 
   .btn-submit:hover {
-    background-color: #0D47A1 !important;
+    background-color: #0D47A1;
   }
 
 
+.order-form-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FC944C;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
-
-
-
-
-
-
-
+.order-container {
+    background-color: white;
+    box-shadow: 0 0 20px 0 #0000001a;
+}
 
 
 
