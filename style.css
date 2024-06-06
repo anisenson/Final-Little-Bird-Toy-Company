@@ -183,6 +183,12 @@ body {
     min-height: 100vh;
     background-color: #FC944C;
 }
+
+.card-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
 /* Circle images */
 .circle_Image {
     width: 200px;
@@ -388,6 +394,9 @@ body {
     height: 300px;
 }
 
+@media screen {
+    
+}
 /*order form*/
 
 .order-form .container {
