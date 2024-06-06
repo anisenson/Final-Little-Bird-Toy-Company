@@ -35,7 +35,7 @@ const Products = [
         img1: 'images/plane1.jpg',
         img2: 'images/plane2.jpg',
         img3: 'images/plane3.jpg',
-        img4: 'images/plane4.jpg',
+        img4: 'images/Plane4.png',
         modalID: 'modal4'
     },
     {
@@ -44,11 +44,11 @@ const Products = [
         description: 'Set sail for bathtub adventures with this adorable wooden boat. Made from solid Maine white pine, this handcrafted toy floats and features rounded edges for safety.',
         age: 'All Ages',
         measures: '(10.5"W x 3.5"H)',
-        cardimg: 'images/boat3.png',
-        img1: 'images/boat3.png',
-        img2: 'images/boat1.jpg',
-        img3: 'images/boat2.jpg', 
-        img4: 'images/boat5.jpg',
+        cardimg: 'images/boat1.png',
+        img1: 'images/boat1.png',
+        img2: 'images/boat2.png',
+        img3: 'images/boat3.png', 
+        img4: 'images/boat4.png',
         modalID: 'modal5'
     },
     {
@@ -155,3 +155,10 @@ window.onload = generateProductCards;
 function refresh() {
     location.reload();
 }
+
+
+
+
+
+
+

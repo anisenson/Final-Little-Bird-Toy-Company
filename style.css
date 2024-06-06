@@ -391,12 +391,25 @@ body {
 
 .mainPic {
     width: 400px;
-    height: 300px;
+    height: auto;
+    border: 1px solid #503B3B;
+
 }
 
-@media screen {
-    
+@media (max-width: 500px) {
+    .mainPic {
+        width: 300px;
+        height: auto;
+    }
 }
+
+@media (max-width: 350px) {
+    .mainPic {
+        width: 200px;
+        height: auto;
+    }
+}
+  
 /*order form*/
 
 .order-form .container {
@@ -437,6 +450,12 @@ body {
     background-color: white;
     box-shadow: 0 0 20px 0 #0000001a;
 }
+
+
+
+
+
+
 
 
 
