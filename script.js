@@ -1,7 +1,7 @@
 const Products = [
     {
         product: 'Wooden Cars',
-        price: '$2.99',
+        price: '$8.99',
         description: 'This heirloom-quality wooden car is a timeless treasure. Handcrafted from domestic and exotic hardwoods with a clear lacquer finish, this unique car will inspire generations of imaginative play. Please note potential choking hazards for small children.',
         age: 'All Ages',
         measures: 'N/A',
@@ -14,7 +14,7 @@ const Products = [
     },
     {
         product: 'Wooden Train Set',
-        price: '$10.99',
+        price: '$14.99',
         description: 'Embark on a charming journey with this beautiful handcrafted wooden train set. Engine and three interchangeable cars boast intricate details made from real beech wood. Large size with moving wheels and a fully ecological design.',
         age: '3+',
         measures: '(84cm L x 11cm H x 13cm W)',
@@ -27,7 +27,7 @@ const Products = [
     },
     {
         product: 'Wooden Airplane',
-        price: '$4.99',
+        price: '$9.99',
         description: 'Soar through imaginative skies with this classic wooden airplane. Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller. ',
         age: 'Toddlers',
         measures: '(3.5"H x 7"L x 7"W.)',
@@ -40,7 +40,7 @@ const Products = [
     },
     {
         product: 'Wooden Boat',
-        price: '$3.99',
+        price: '$8.99',
         description: 'Set sail for bathtub adventures with this adorable wooden boat. Made from solid Maine white pine, this handcrafted toy floats and features rounded edges for safety.',
         age: 'All Ages',
         measures: '(10.5"W x 3.5"H)',
@@ -53,7 +53,7 @@ const Products = [
     },
     {
         product: 'Wooden Block Set',
-        price: '$12.99',
+        price: '$17.99',
         description: 'Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate',
         age: '3+',
         measures: '(13” L x 12” W x 2” H).',
@@ -66,7 +66,7 @@ const Products = [
     },
     {
         product: 'Wooden Sailboat',
-        price: '$14.99',
+        price: '$12.99',
         description: 'Sturdy enough to withstand years of hard play and then be passed on to the kids of the next generation. Each wooden toy is carefully handmade with all edges and corners rounded, and then hand sanded to a pleasant feeling satin smooth natural finish that the toddler can safely chew on.',
         age: '3+',
         measures: '(13” L x 12” W x 2” H).',
@@ -158,3 +158,48 @@ function refresh() {
 
 
 
+
+
+// Function to calculate total price
+function calculateTotalPrice() {
+    // Get all checkboxes and select elements
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const selects = document.querySelectorAll('select');
+
+    // Define toy prices
+    const toyPrices = {
+        "Wooden Car $8.99": 8.99,
+        "Wooden Train Set $14.99": 14.99,
+        "Wooden Airplane $9.99": 9.99,
+        "Wooden Boat $8.99": 8.99,
+        "Wooden Block Set $17.99": 17.99,
+        "Wooden Sailboat $12.99": 12.99
+    };
+
+    let totalPrice = 0;
+
+    // Iterate over checkboxes and selects to calculate total price
+    checkboxes.forEach((checkbox, index) => {
+        if (checkbox.checked) {
+            const toyName = checkbox.nextElementSibling.textContent;
+            const quantity = parseInt(selects[index].value);
+            totalPrice += toyPrices[toyName] * quantity;
+        }
+    });
+
+    // Display total price if the element with ID 'totalPrice' exists
+    const totalPriceElement = document.getElementById('totalPrice');
+    if (totalPriceElement) {
+        totalPriceElement.textContent = `$${totalPrice.toFixed(2)}`;
+    }
+}
+
+// Event listeners for checkboxes and selects
+document.addEventListener('change', function(event) {
+    if (event.target.matches('input[type="checkbox"]') || event.target.matches('select')) {
+        calculateTotalPrice();
+    }
+});
+
+
+calculateTotalPrice();
