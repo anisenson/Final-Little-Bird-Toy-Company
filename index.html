@@ -70,7 +70,8 @@
                                 The joy of timeless play with Little Bird Toys, where each toy is handcrafted from
                                 sustainable materials to spark creativity and foster connections between generations.
                             </p>
-                            <button class="buttonstyle mb-2" onclick="location.href='#section-aboutUs'">Learn More!</button>
+                            <button class="buttonstyle mb-2" onclick="location.href='#section-aboutUs'">Learn
+                                More!</button>
                         </div>
                     </div>
                 </div>
@@ -97,36 +98,33 @@
                 </div>
                 <div class="row justify-content-center align-items-center my-5">
                     <div class="col-sm-12 col-md-3 text-center g-2">
-                        <img class="img-fluid w-100 h-100 border border-dark rounded" src="images/block2.jpg">
+                        <img class="img-fluid w-100 h-auto border border-dark rounded" src="images/block2.jpg">
                     </div>
                     <div class="col-sm-12 col-md-2 text-center g-2">
-                        <img class="img-fluid rounded-circle bg-light border border-dark"
-                            src="logos/Alternate Logo 1.png">
+                        <img class="img-fluid rounded-circle w-100 h-auto bg-light border border-dark" src="logos/Alternate Logo 1.png">
                     </div>
                     <div class="col-sm-12 col-md-3 text-center g-2">
-                        <img class="img-fluid w-100 h-100 border border-dark rounded" src="images/blocks6.jpg">
-
+                        <img class="img-fluid w-100 h-auto border border-dark rounded" src="images/blocks6.jpg">
                     </div>
                 </div>
-                <div class="row justify-content-center align-items-center my-5">
-                    <div class="col-8 bg-light border border-dark rounded p-3">
+                
+                <div class="row justify-content-center align-items-stretch my-5">
+                    <div class="col-sm-12 col-md-4 d-flex flex-column bg-light border border-dark rounded p-3 mx-2 g-2">
                         <h2 class="text-center">
                             Visit us:
                         </h2>
-                        <p>
+                        <p class="flex-grow-1">
                             Become part of the Little Bird Toys family! We love interacting with our customers and
                             sharing the joy of our handcrafted toys. Visit our Toms River, NJ store to explore our
                             charming play space and meet the team behind the magic.
                         </p>
                     </div>
-                </div>
-
-                <div class="row justify-content-center align-items-center g-2 my-5">
-                    <div class="col-4 bg-light border border-dark rounded p-3 h-100 m-2">
+                
+                    <div class="col-sm-12 col-md-4 d-flex flex-column bg-light border border-dark rounded p-3 mx-2 g-2">
                         <h2 class="text-center">
                             Store Hours:
                         </h2>
-                        <ul>
+                        <ul class="flex-grow-1">
                             <li><b>Monday:</b> CLOSED </li>
                             <li><b>Tuesday:</b> 9:00-4:30 </li>
                             <li><b>Wednesday:</b> 9:00-4:30 </li>
@@ -134,22 +132,49 @@
                             <li><b>Friday:</b> 9:00-3:00 </li>
                             <li><b>Saturday:</b> 10:00-3:00 </li>
                             <li><b>Sunday:</b> 9:00-4:30 </li>
-
                         </ul>
-                    
-                    
                     </div>
-                    <div class="col-4 bg-light border border-dark rounded p-3 h-100 m-2">
-                        <h2 class="text-center">
-                            Reviews:
-                        </h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium tempora asperiores id a
-                            quam rerum architecto reprehenderit similique dolore. Lorem ipsum dolor sit, amet
-                            consectetur adipisicing elit. A, nobis. Odit nobis numquam architecto, distinctio fuga
-                            officiis amet temporibus praesentium necessitatibus molestiae? Iste fugiat ex deleniti qui
-                            vel, commodi dolore!
-                        </p>
+                </div>
+                
+
+
+                <div class="row justify-content-center align-items-center g-2 my-5">
+
+                    <div class="col-10 bg-light border border-dark rounded p-3 h-100 m-2">
+                        
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
+
+                            <!-- Full-width slides/quotes -->
+                            <div class="mySlides">
+                            <q>Little Bird Toys are a hit in our household! The craftsmanship is impeccable, and I love that they are made from sustainable materials. My kids spend hours playing with the wooden train set, and I appreciate knowing it's safe and eco-friendly.</q>
+                            <p class="author">- Emma L.
+                            </p>
+                            </div>
+                        
+                            <div class="mySlides">
+                            <q>We bought the wooden airplane for our toddler, and it has quickly become his favorite toy. The natural finish and smooth edges are perfect for little hands, and I’m impressed by the quality. Definitely a keepsake we’ll cherish for years.</q>
+                            <p class="author">- James R.
+                            </p>
+                            </div>
+                        
+                            <div class="mySlides">
+                            <q>The wooden block set from Little Bird Toys is fantastic! It encourages my kids to be creative and build anything they can imagine. The blocks are sturdy, beautifully made, and come in a handy storage crate. Highly recommend!</q>
+                            <p class="author">- Sophia M.
+                            </p>
+                            </div>
+                        
+                            <!-- Next/prev buttons -->
+                            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                        </div>
+                        
+                        <!-- Dots/bullets/indicators -->
+                        <div class="dot-container">
+                            <span class="dot" onclick="setCurrentSlide(1)"></span>
+                            <span class="dot" onclick="setCurrentSlide(2)"></span>
+                            <span class="dot" onclick="setCurrentSlide(3)"></span>
+                        </div>
                     </div>
                 </div>
 
