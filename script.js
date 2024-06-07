@@ -112,11 +112,13 @@ function generateProductCards() {
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-12 border border-dark rounded p-2">
                                     <h4><br>${product.description}</h4>
-                                    <h5>Age: ${product.age}</h5>
-                                    <h6>Measures: ${product.measures}</h6>
-                                    <h6>Price: ${product.price}</h6>
+                                    <ul>
+                                    <li><h5>Age: ${product.age}</h5></li>
+                                    <li><h6>Measures: ${product.measures}</h6></li>
+                                    <li><h6>Price: ${product.price}</h6></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
