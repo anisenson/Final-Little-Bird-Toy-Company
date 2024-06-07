@@ -92,7 +92,7 @@ function generateProductCards() {
                 <div class="card-body text-center">
                     <h5 class="card-title">${product.product}</h5>
                     <p class="card-text">${product.price}</p>
-                    <a href="#" data-toggle="modal" data-target="#${product.modalID}">Learn More</a>
+                    <button class=""><a href="#" data-toggle="modal" data-target="#${product.modalID}">Learn More</a></button>
                 </div>
             </div>
             <!-- Modal -->
