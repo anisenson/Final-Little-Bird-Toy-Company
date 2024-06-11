@@ -185,6 +185,9 @@ body {
     width: 100%;
     min-height: 100vh;
     background-color: #FC944C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-card-2{

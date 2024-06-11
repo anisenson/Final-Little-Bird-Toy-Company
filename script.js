@@ -164,9 +164,8 @@ function refresh() {
 
 // Function to calculate total price
 function calculateTotalPrice() {
-    // Get all checkboxes and select elements
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    const selects = document.querySelectorAll('select');
+    // Get all checkboxes and their corresponding select elements
+    const productRows = document.querySelectorAll('.order-form .row.mx-4.mb-3');
 
     // Define toy prices
     const toyPrices = {
@@ -180,11 +179,14 @@ function calculateTotalPrice() {
 
     let totalPrice = 0;
 
-    // Iterate over checkboxes and selects to calculate total price
-    checkboxes.forEach((checkbox, index) => {
-        if (checkbox.checked) {
-            const toyName = checkbox.nextElementSibling.textContent;
-            const quantity = parseInt(selects[index].value);
+    // Iterate over product rows to calculate total price
+    productRows.forEach((row) => {
+        const checkbox = row.querySelector('input[type="checkbox"]');
+        const select = row.querySelector('select');
+
+        if (checkbox && checkbox.checked && select) {
+            const toyName = checkbox.nextElementSibling.textContent.trim();
+            const quantity = parseInt(select.value) || 0;
             totalPrice += toyPrices[toyName] * quantity;
         }
     });
@@ -203,42 +205,7 @@ document.addEventListener('change', function(event) {
     }
 });
 
-
+// Initial calculation
 calculateTotalPrice();
+    
 
-
-
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function changeSlide(n) {
-  showSlides(slideIndex += n);
-}
-
-function setCurrentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  const slides = document.getElementsByClassName("mySlides");
-  const dots = document.getElementsByClassName("dot");
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  for (let slide of slides) {
-    slide.style.display = "none";
-  }
-
-  for (let dot of dots) {
-    dot.className = dot.className.replace(" active", "");
-  }
-
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
