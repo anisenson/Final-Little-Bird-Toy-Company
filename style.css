@@ -176,6 +176,9 @@ body {
     width: 100%;
     min-height: 100vh;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-card2 {
@@ -183,6 +186,17 @@ body {
     min-height: 100vh;
     background-color: #FC944C;
 }
+
+.section-card-2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FC944C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 .card-section {
     width: 100%;
