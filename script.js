@@ -88,11 +88,11 @@ function generateProductCards() {
 
         card.innerHTML = `
             <div class="carditem">
-                <img src="${product.cardimg}" class="card-img-top cardimgborder" alt="${product.product}">
-                <div class="card-body text-center">
+                <img src="${product.cardimg}" class="card-img-top cardimgborder img-fluid" alt="${product.product}">
+                <div class="card-body text-center p-2">
                     <h5 class="card-title">${product.product}</h5>
                     <p class="card-text">${product.price}</p>
-                    <button class="cool-button"><a href="#" data-toggle="modal" data-target="#${product.modalID}">Learn More</a></button>
+                    <a href="#" data-toggle="modal" data-target="#${product.modalID}"><button class="btn btn-secondary">Learn More</button></a>   
                 </div>
             </div>
             <!-- Modal -->
@@ -111,11 +111,12 @@ function generateProductCards() {
                                     <img class="smallpic" id="smallpic${index}-4" src="${product.img4}">
                                 </div>
                             </div>
+                            <hr>
                             <div class="row">
-                                <div class="col-12 border border-dark rounded p-2">
-                                    <h4><br>${product.description}</h4>
+                                <div class="col-12 p-3">
+                                    <h4>${product.description}</h4>
                                     <ul>
-                                    <li><h5>Age: ${product.age}</h5></li>
+                                    <li><h6>Age: ${product.age}</h6></li>
                                     <li><h6>Measures: ${product.measures}</h6></li>
                                     <li><h6>Price: ${product.price}</h6></li>
                                     </ul>

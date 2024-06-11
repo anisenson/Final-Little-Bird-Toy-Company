@@ -310,8 +310,11 @@ body {
 /* Card styling */
 .carditem {
     border: 1px solid black;
-    border-radius: 5px;
     transition: transform 0.2s;
+}
+
+.cardimgborder {
+
 }
  
 .carditem:hover {
@@ -547,7 +550,5 @@ body {
   .author {color: #FC944C;}
 
 
-  .cool-button{
-    
-  }
+
   
