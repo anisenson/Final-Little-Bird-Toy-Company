@@ -111,16 +111,17 @@ body {
 .slideshow-container q {
     font-size: large;
 }
-  
-  /* Slides */
-  .mySlides {
+
+/* Slides */
+.mySlides {
     display: none;
     padding: 80px;
     text-align: center;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -133,27 +134,28 @@ body {
     border-radius: 0 3px 3px 0;
     user-select: none;
     text-decoration: none;
-  }
-  
-  .next {
+}
+
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
-  }
-  
-  /* Dot/bullet/indicator container */
-  .dot-container {
+}
+
+/* Dot/bullet/indicator container */
+.dot-container {
     text-align: center;
     padding: 20px;
     background: #ddd;
-  }
-  
-  /* Dots/bullets/indicators */
-  .dot {
+}
+
+/* Dots/bullets/indicators */
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -162,15 +164,21 @@ body {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
+}
+
+.active,
+.dot:hover {
     background-color: #717171;
-  }
-  
-  q {font-style: italic;}
-  .author {color: #FC944C;}
-  
+}
+
+q {
+    font-style: italic;
+}
+
+.author {
+    color: #FC944C;
+}
+
 /* Other sections */
 .section-card {
     width: 100%;
@@ -190,7 +198,7 @@ body {
     justify-content: center;
 }
 
-.section-card-2{
+.section-card-2 {
     width: 100%;
     min-height: 100vh;
     background-color: #FC944C;
@@ -206,6 +214,7 @@ body {
     min-height: 100vh;
     background-color: white;
 }
+
 /* Circle images */
 .circle_Image {
     width: 200px;
@@ -277,10 +286,10 @@ body {
 }
 
 .footer .fa-lg {
-    font-size: 1.75em; 
+    font-size: 1.75em;
     margin-right: 10px;
 }
-  
+
 
 .footerCredit {
     background-color: #503B3B;
@@ -290,32 +299,30 @@ body {
 }
 
 .instagram-icon {
-    color: #C13584; 
+    color: #C13584;
 }
 
 .twitter-icon {
-    color: #1DA1F2; 
+    color: #1DA1F2;
 }
 
 .snapchat-icon {
-   color: #FFFC00; 
+    color: #FFFC00;
 }
 
 .facebook-icon {
-    color: #3b5998; 
+    color: #3b5998;
 }
 
-.fa-phone{
+.fa-phone {
     color: #90EE90;
 }
 
-.fa-envelope{
+.fa-envelope {
     color: blue;
 }
 
-.fa-desktop{
-    
-}
+.fa-desktop {}
 
 /* footer styling */
 
@@ -325,10 +332,8 @@ body {
     transition: transform 0.2s;
 }
 
-.cardimgborder {
+.cardimgborder {}
 
-}
- 
 .carditem:hover {
     transform: scale(1.005);
     box-shadow: 2px 2px 2px 2px #503B3B;
@@ -406,6 +411,7 @@ body {
     height: auto;
     margin: 2px;
 }
+
 .activeBorder {
     border: 1px solid #503B3B;
 }
@@ -441,7 +447,7 @@ body {
         height: auto;
     }
 }
-  
+
 /*order form*/
 
 .order-form .container {
@@ -449,13 +455,13 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
     max-width: 650px;
-  }
+}
 
-  .order-form-label {
+.order-form-label {
     margin: 8px 0 0 0;
     font-size: 14px;
     font-weight: bold;
-  }
+}
 
 .order-form-input,
 .form-label,
@@ -463,11 +469,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 
-  }
+}
 
-  .btn-submit:hover {
+.btn-submit:hover {
     background-color: #0D47A1;
-  }
+}
 
 
 .order-form-section {
@@ -498,23 +504,25 @@ body {
     background: white;
 }
 
-.slideshow-container, .dot-container{
+.slideshow-container,
+.dot-container {
     border: 1px solid #503B3B;
 }
 
 .slideshow-container q {
     font-size: large;
 }
-  
-  /* Slides */
-  .mySlides {
+
+/* Slides */
+.mySlides {
     display: none;
     padding: 60px;
     text-align: center;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -527,27 +535,28 @@ body {
     border-radius: 0 3px 3px 0;
     user-select: none;
     text-decoration: none;
-  }
-  
-  .next {
+}
+
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
+}
+
+.prev:hover,
+.next:hover {
     background-color: #503B3B;
     color: white;
-  }
-  
-  /* Dot/bullet/indicator container */
-  .dot-container {
+}
+
+/* Dot/bullet/indicator container */
+.dot-container {
     text-align: center;
     padding: 20px;
     background: #dfdfdf;
-  }
-  
-  /* Dots/bullets/indicators */
-  .dot {
+}
+
+/* Dots/bullets/indicators */
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -556,14 +565,20 @@ body {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
+}
+
+.active,
+.dot:hover {
     background-color: #503B3B;
-  }
-  
-  q {font-style: italic;}
-  .author {color: #FC944C;}
+}
+
+q {
+    font-style: italic;
+}
+
+.author {
+    color: #FC944C;
+}
 
 
 

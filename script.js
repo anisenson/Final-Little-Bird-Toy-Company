@@ -1,4 +1,4 @@
-const Products = [
+const Products = [ //objects for products card
     {
         product: 'Wooden Cars',
         price: '$8.99',
@@ -79,6 +79,7 @@ const Products = [
     },
 ];
 
+//function to generate the product cards 
 function generateProductCards() {
     const productCardsContainer = document.getElementById('productCards');
 
@@ -155,6 +156,7 @@ function generateProductCards() {
 
 window.onload = generateProductCards;
 
+
 function refresh() {
     location.reload();
 }
@@ -209,7 +211,7 @@ document.addEventListener('change', function(event) {
 // Initial calculation
 calculateTotalPrice();
 
-
+// js for reviews slide show
 let slideIndex = 1;
 showSlides(slideIndex);
 
