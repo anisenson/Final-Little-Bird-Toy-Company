@@ -483,7 +483,11 @@ body {
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    background: #f1f1f1;
+    background: white;
+}
+
+.slideshow-container, .dot-container{
+    border: 1px solid #503B3B;
 }
 
 .slideshow-container q {
@@ -493,7 +497,7 @@ body {
   /* Slides */
   .mySlides {
     display: none;
-    padding: 80px;
+    padding: 60px;
     text-align: center;
   }
   
@@ -527,7 +531,7 @@ body {
   .dot-container {
     text-align: center;
     padding: 20px;
-    background: #ddd;
+    background: #dfdfdf;
   }
   
   /* Dots/bullets/indicators */
