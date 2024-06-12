@@ -100,7 +100,13 @@ body {
     background-color: #FC944C;
 }
 
+.container-aboutUS {
+    height: 100%;
+}
 
+.div-background {
+    background-color: #dfdfdf;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -596,7 +602,9 @@ q {
 
 .about-img {
     width: 100%;
+    height: auto;
 }
+
 
 .img-row {
     background-color: white;
