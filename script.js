@@ -47,7 +47,7 @@ const Products = [ //objects for products card
         cardimg: 'images/boat1.png',
         img1: 'images/boat1.png',
         img2: 'images/boat2.png',
-        img3: 'images/boat3.png', 
+        img3: 'images/boat3.png',
         img4: 'images/boat4.png',
         modalID: 'modal5'
     },
@@ -202,7 +202,7 @@ function calculateTotalPrice() {
 }
 
 // Event listeners for checkboxes and selects
-document.addEventListener('change', function(event) {
+document.addEventListener('change', function (event) {
     if (event.target.matches('input[type="checkbox"]') || event.target.matches('select')) {
         calculateTotalPrice();
     }
@@ -216,34 +216,34 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function changeSlide(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 function setCurrentSlide(n) {
-  showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  const slides = document.getElementsByClassName("mySlides");
-  const dots = document.getElementsByClassName("dot");
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
 
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
 
-  for (let slide of slides) {
-    slide.style.display = "none";
-  }
+    for (let slide of slides) {
+        slide.style.display = "none";
+    }
 
-  for (let dot of dots) {
-    dot.className = dot.className.replace(" active", "");
-  }
+    for (let dot of dots) {
+        dot.className = dot.className.replace(" active", "");
+    }
 
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
 
 
