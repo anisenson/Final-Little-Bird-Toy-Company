@@ -50,6 +50,10 @@ body {
     color: #FC944C;
 }
 
+.nav-active {
+    color: #FC944C;
+}
+
 /* Section: Landing */
 .section-landing {
     display: flex;
