@@ -616,3 +616,39 @@ q {
     font-family: 'SugarAndSpice';
     font-size: xx-large;
 }
+
+.phone2{
+    color: #503b3b;
+    font-size: 50px;
+    
+}
+
+.envelope2{
+    color: #503b3b;
+    font-size: 50px;
+    
+}
+
+.dot2{
+    color: #503B3B;
+    font-size: 50px;
+    
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+.contact-info i {
+    margin-bottom: 10px;
+}
+.contact-form {
+    height: 100%;
+}
+.full-height {
+    height: 100%;
+}
